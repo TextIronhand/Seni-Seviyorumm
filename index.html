@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Seni Seviyorum Çünkü...</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #cc0000;
+        }
+
+        #message {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <body>
+      <!-- Diğer içerikler -->
+
+      <button onclick="document.getElementById('mymusic').play()">Müziği Başlat</button>
+
+      <audio id="mymusic" loop>
+        <source src="https://media.vocaroo.com/mp3/1gYQ82Y9FNIA" type="audio/mpeg">
+        Tarayıcın bu sesi desteklemiyor.
+      </audio>
+
+    </body>
+
+
+    <h1>Seni Seviyorum Çünkü...</h1>
+    <div id="message">Butona tıkla 💖</div>
+    <button onclick="showReason()">Yeni Mesaj</button>
+
+    <script>
+        const reasons = [
+            "Seninle konuşmak bile huzur veriyor.",
+            "Gülüşün çok güzel ve aynı gülüşten kızımda bile olsun istiyorum.",
+            "En zor anlarımda bile yanımda oldun.",
+            "Her konuda bana destek oldun saçma hayallerimde bile.",
+            "Bir bakışınla tüm yorgunluğum geçiyor.",
+            "çok güzel gülüyosun.",
+            "çok çok çok çok çok ama çok güzel bakıyosun.",
+            "yanakların çoksel.",
+            "ellerin o kadar güzel ki satranç oynarken dikkatimi dağıtıyo.",
+            "seninle bir ömür boyu satranç oynayabilirim.",
+            "senin yanımda kendim gibi olabiliyorum.",
+            "sarılırken yaşadığım hisleri daha önce hiç yaşamadım.",
+            "bana beni sevdiğini çok güzel hissettiriyosun.",
+            "seninle birlikte her şey daha güzel oluyor.",
+            "bana değer veriyosun.",
+            "birlikte yürüdüğümüz sıkıcı sokaklar bile anlam kazanıyo seninle.",
+            "dudaklarınla yanağıma kondurduğun buseler içimi hoş ediyo.",
+            "renksiz hayatıma gökkuşağı gibi renk kattın.",
+            "beni kendine çeken bişeyler var sende.",
+            "saçlarını savurduğunda titriyorum.",
+            "bana hayatımı değerli kılıcak bi değer verdin (kendini) .",
+            "çok zekisin akıllısın ve bu çok çekici.",
+            "farklı düşünüyosun herkesten her şeyden.",
+            "beni tamamlıyosun.",
+            "çok farklısın, özelsin.",
+            "o kadar güzelsin ki seninle bir ömür boyu yaşayabilirim.",
+            "o kadar güzel gülüyosun ve bakıyosun ki sana benzeyen bi kızımız olsun istiyorum.",
+            "çok merhametlisin.",
+            "onca saçma ilişkinin, insanın içinde o kadar değerlisin ki birlikte harika bi ilişki yaşıyoruz.",
+            "sen birtanesin."
+        ];
+
+        function showReason() {
+            const randomIndex = Math.floor(Math.random() * reasons.length);
+            document.getElementById("message").innerText = reasons[randomIndex];
+        }
+    </script>
+    <div style="text-align: center; margin-top: 100px; font-size: 18px; color: #555;">
+        <p>📝 Bu site senin için hazırlandı. Seni neden sevdiğimi öğrenmeye her ihtiyacın olduğunda ziyaret edebilirsin
+            birtanem.</p>
+    </div>
+
+</body>
+
+</html>
